@@ -40,6 +40,20 @@ git checkout master
 git status  
 git restore xxx  
 
+#### 分支  
+git branch xxx // 分支名字  
+...  
+git checkour master  
+git merge xxx // 分支名字  
+
+#### tag // 版本控制,相当于commit id
+(1)  
+git tag 2.0.0 -m ''  
+(2)  
+git log  
+git checkout xxx // commit id  
+git tag 2.0.0 -m ''  
+
 #### 解决冲突  // 结果是两次commit. 
 // git push 未成功后  
 git pull // 提示出现冲突  
