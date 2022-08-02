@@ -40,11 +40,10 @@ git checkout master
 git status  
 git restore xxx  
 
-<<<<<<< HEAD
 #### 分支  
 git branch xxx // 分支名字  
 ...  
-git checkour master  
+git checkout master  
 git merge xxx // 分支名字  
 
 #### tag // 版本控制,相当于commit id
