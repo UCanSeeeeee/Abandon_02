@@ -12,7 +12,7 @@ git push -u origin master
 #### 第二次及以后提交  
 
 cd 文件  
-git add .
+git add .  
 git commit -m ''  
 git push   
 
@@ -40,6 +40,7 @@ git checkout master
 git status  
 git restore xxx  
 
+<<<<<<< HEAD
 #### 分支  
 git branch xxx // 分支名字  
 ...  
@@ -54,7 +55,8 @@ git log
 git checkout xxx // commit id  
 git tag 2.0.0 -m ''  
 
-#### 解决冲突  // 结果是两次commit. 
+#### 解决冲突  // 结果是两次commit.  
+
 // git push 未成功后  
 git pull // 提示出现冲突  
 解冲突  
@@ -65,7 +67,7 @@ git push
 #### 未知解决冲突的知识点(先记录一下，用到的时候再重写这一部分)  
 - 冲突  
 git fetch origin main  
-git rebase origin main  
+git rebase origin main   
 - 解决冲突  
 git add .  
 git rebase --continue  
