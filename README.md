@@ -16,6 +16,9 @@ git clone xxxxxx // 仓库地址
 
 #### 从remote拉取仓库 // 本地已init  
 
+cd 目录  
+// git status  
+git pull  
 
 #### 获取历史版本  
 
@@ -30,8 +33,13 @@ git checkout master
 git status  
 git restore xxx  
 
-
-
+#### 解决冲突  // 结果是两次commit
+// git push 未成功后  
+git pull // 提示出现冲突  
+解冲突  
+git add .  
+git commit -m ''  
+git push  
 
 - git reset xxx // changes -> untracked files  
 - git status // 查看状态  
