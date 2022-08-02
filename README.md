@@ -12,7 +12,7 @@ git push -u origin master
 #### 从github拉取仓库 // 本地未init  
 
 cd 目录  
-git clone https://xxxxxx 仓库地址  
+git clone xxxxxx // 仓库地址  
 
 #### 从remote拉取仓库 // 本地已init  
 
