@@ -1,6 +1,6 @@
 # Git 操作
 
-#### 创建仓库
+#### 创建仓库 && 第一次提交
 // cd -> init -> add -> commit -> remote -> push  
 cd 根目录  
 git init  //建立仓库  
@@ -8,6 +8,13 @@ git add . //这个命令会把当前路径下的所有文件添加到待上传�
 git commit -m "这里写上提交的注释"  
 git remote add origin+你的库链接  
 git push -u origin master  
+
+#### 第二次及以后提交  
+
+cd 文件  
+git add .
+git commit -m ''  
+git push   
 
 #### 从github拉取仓库 // 本地未init  
 
@@ -33,7 +40,7 @@ git checkout master
 git status  
 git restore xxx  
 
-#### 解决冲突  // 结果是两次commit
+#### 解决冲突  // 结果是两次commit. 
 // git push 未成功后  
 git pull // 提示出现冲突  
 解冲突  
@@ -41,6 +48,16 @@ git add .
 git commit -m ''  
 git push  
 
+#### 未知解决冲突的知识点(先记录一下，用到的时候再重写这一部分)  
+- 冲突  
+git fetch origin main  
+git rebase origin main  
+- 解决冲突  
+git add .  
+git rebase --continue  
+git push  
+
+#### 解释  
 - git reset xxx // changes -> untracked files  
 - git status // 查看状态  
 - git log // 查看历史日志 - ‘利用好commit’  
